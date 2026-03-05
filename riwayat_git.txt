@@ -1,0 +1,6 @@
+*   062ddf5 selesaikan merge conflict
+|\  
+| * 269d458 tambah komentar versi 1
+* | 202afd8 tambah komentar versi 2
+|/  
+* 800e18f inisiasi github
