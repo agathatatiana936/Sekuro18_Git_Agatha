@@ -1,0 +1,30 @@
+  425  make build
+  426  make disk && qemu-system-i386 -s -drive file=bin/storage.bin,format=raw,if=ide,index=0,media=disk -cdrom bin/ROSE.iso -boot d -m 32
+  427  make build
+  428  make disk
+  429  make insert-shell
+  430  make insert-clock
+  431  make insert-badapple
+  432  make run
+  433  make build disk insert-shel insert-clock insert-badaple
+  434  make insert-shell insert-clock insert-badapple
+  435  make run
+  436  make 
+  437  make debug
+  438  make run
+  439  uname -sr && whoami
+  440  sudo apt update
+  441  apt list --upgradable
+  442  sudo apt install build-essential
+  443  which g++ > compiler_trace.log && g++ --version | head -n 1 >> compiler_trace.log
+  444  mkdir ~/recovery_ops
+  445  cd ~/recovery_ops
+  446  pwd
+  447  wget https://raw.githubusercontent.com/aryadiiptaa/YESS/refs/heads/main/system_raw.txt -O system_raw.txt
+  448  ls
+  449  head -n 1260 system_raw.txt | tail -n 11 > recovered_sector.txt
+  450  cat recovered_sector.txt
+  451  rm system_raw.txt
+  452  ls
+  453  code .
+  454  history | tail -n 30 > history_audit.txt
